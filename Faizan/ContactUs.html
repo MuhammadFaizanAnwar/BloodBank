@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <title>Contact Us</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #E31D1A;
+        }
+
+        .contact-form {
+            margin: 50px;
+            padding: 50px;
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+        }
+
+        .contact-form .form-heading {
+            text-align: center;
+        }
+
+        .contact-form .contactus-content {
+            display: flex;
+            width: 80%;
+            text-align: center;
+        }
+
+        .contact-form .contactus-content-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0%;
+            margin: 0%;
+        }
+
+        .form-control {
+            height: 40px;
+            box-shadow: none;
+            color: #969fa4;
+            width: 100%;
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+
+        .contact-details-form {
+            display: flex;
+            justify-content: center;
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+        }
+
+        .contact-details-form>div {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            margin: 15px;
+            padding: 15px;
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+            width: 50%;
+            margin: auto;
+        }
+
+
+        .flex-container .name-flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+        }
+
+        .flex-container .name-flex-container>div {
+            flex-grow: 1;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: center;
+        }
+
+        .form-group .btn {
+            border-radius: 3px;
+            height: 40px;
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="BloodTips.html">Blood Tips</a></li>
+            <li><a href="AboutUs.html">About</a></li>
+            <li><a href="EligibilityTest.html">Eligibility</a></li>
+            <li><a class="active" href="ContactUs.html">Contact</a></li>
+            <li style="float:right"><a href="Login.html">Sign In</a></li>
+        </ul>
+    </header>
+
+    <div class="contact-form" style="background-color:#E2A941;">
+
+        <form action="/action_page.php">
+
+            <h1 class="form-heading">Contact Us</h1>
+            <h2 style="text-align: center;">WE’D LOVE TO HELP YOU IN EMAIL OR VIA CALL!</h2>
+
+            <div class="contactus-content-div">
+                <p class="contactus-content">Supertasker.pk is helping thousands of people to do business.
+                    Our customer support team is available from 09:00 am to 05:00 pm (monday to friday),
+                    we are passionate about our community platform as well as our members and it shows in the quality of
+                    service that we provide.
+                    We are always happy to help you in finding the best solutions for all your needs.
+                    If you have any question about our platform or services contact our support team. </p>
+
+                <p>Please Email us using the contact form or call us. </p>
+                <p>MAIN OFFICE: 3rd Floor, Mega Tower, Gulberg - lll, Lahore</p>
+                <p>PHONE: +92 311 1444975</p>
+                <p>EMAIL: info@supertasker.pk</p>
+            </div>
+
+
+            <!-- <div class="contact-details-form"> -->
+            <div class="flex-container">
+                <div class="name-flex-container">
+                    <div style="margin-right: 10px;"><input type="text" class="form-control" name="first_name"
+                            placeholder="First Name" required="required"></div>
+                    <div><input type="text" class="form-control" name="last_name" placeholder="Last Name"
+                            required="required"></div>
+                </div>
+
+                <div><input type="text" class="form-control" name="email" placeholder="Email" required="required">
+                </div>
+                <div><input type="text" class="form-control" name="phone" placeholder="Phone Number"
+                        required="required"></div>
+
+                <div><input type="text" class="form-control" name="message" placeholder="Your Message"
+                        required="required"></div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn">Submit Now</button>
+                </div>
+
+            </div>
+            <!-- </div> -->
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>

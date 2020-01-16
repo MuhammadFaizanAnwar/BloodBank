@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <title>Blood Tips</title>
+    <style scoped>
+        .content-list {
+            list-style-position: outside;
+            list-style-type: circle;
+            /* background-color: white; */
+            background-color: #E2A941;
+        }
+
+        .content-list>li {
+            padding: 10px;
+        }
+
+        .header-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .header-list>li {
+            float: left;
+        }
+
+        .header-list>li a {
+            display: block;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .header-list>li a:hover {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #E31D1A;
+        }
+
+        p.fontStyle {
+            margin: 0, 0, 11px;
+            font-size: 14px;
+        }
+
+        .main-div {
+            display: flex;
+            flex-direction: column;
+            margin: 40px;
+            padding: 20px;
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+        }
+
+        .form-control {}
+
+        .form-control>p,
+        h1 {
+            text-align: center;
+            width: 80%;
+        }
+
+        body {
+            background-color:whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <ul class="header-list">
+            <li><a href="Home.html">Home</a></li>
+            <li><a class="active" href="BloodTips.html">Blood Tips</a class="active"></li>
+            <li><a href="AboutUs.html">About</a></li>
+            <li><a href="EligibilityTest.html">Eligibility</a></li>
+            <li><a href="ContactUs.html">Contact</a></li>
+            <li style="float:right"><a href="Login.html">Sign In</a></li>
+        </ul>
+    </header>
+
+    <div class="main-div" style="background-color:#E2A941;">
+        <form action="/action_page.php">
+
+            <div class="form-control" style="background-color:#E2A941;">
+                <h1 style="color: #E31D1A;text-align: center;">Blood Tips</h1>
+
+                <ul class="content-list">
+                    <li>Drink plenty of water the night and morning before you donate.</li>
+                    <li>Eat breakfast to help keep your blood sugar up.</li>
+                    <li>Eat iron rich foods for 2 weeks before your appointment; for example, spinach, whole grains,
+                        eggs, and beef. </li>
+                    <li>Avoid fatty foods for twenty-four hours before you donate</li>
+                    <li>Avoid smoking on the day before donating. You can smoke 3 hours after donation.</li>
+                    <li>Ask for a blanket if your hands or feet start to feel cold.</li>
+                    <li>Have a snack after the donation.Rest for a few minutes enjoying your snack before leaving the
+                        donation site. </li>
+                    <li>Eat a meal high in protein after your donation: beef, chicken or legumes are excellent choices.
+                    </li>
+                    <li>You will not be eligible to donate blood if you have consumed alcohol 48 hours before donation.
+                    </li>
+                    <li>Avoid heavy lifting and strenuous exercise for the rest of the day.</li>
+                </ul>
+
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <title>About Us</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #E31D1A;
+        }
+
+        p.fontStyle {
+            margin: 0, 0, 11px;
+            font-size: 14px;
+        }
+
+        .main-div {
+            display: flex;
+            flex-direction: column;
+            margin: 40px;
+            padding: 20px;
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+        }
+
+        .form-control {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-control>p,
+        h1 {
+            text-align: center;
+            width: 80%;
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="BloodTips.html">Blood Tips</a></li>
+            <li><a class="active" href="AboutUs.html">About</a></li>
+            <li><a href="EligibilityTest.html">Eligibility</a></li>
+            <li><a href="ContactUs.html">Contact</a></li>
+            <li style="float:right"><a href="Login.html">Sign In</a></li>
+        </ul>
+    </header>
+
+    <div class="main-div" style="background-color:#E2A941;">
+        <form action="/action_page.php">
+
+            <div class="form-control" >
+                <h1 style="color: #E31D1A;">Heartbeat of the nation</h1>
+
+                <h2 style="color: maroon;">On 15 November 2019 we changed from Australian Red
+                    Cross Blood Service to
+                    Australian Red Cross
+                    Lifeblood.</h2>
+
+                <p class="fontStyle">For regular blood, plasma and platelet donors, nothing
+                    much
+                    has changed.
+                    They still continue to support Australians with generous donations,
+                    just as they have for 90 years.</p>
+                <p>But for some people, our new name is quite literally life-changing.
+                    That’s because we’re also helping to facilitate the donation of tissue, organs, breast milk,
+                    and other life-saving biological products.</p>
+                <p>So, while you might not notice much of a difference, to someone in need
+                    of
+                    more than blood, life quite
+                    literally depends on Lifeblood.</p>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

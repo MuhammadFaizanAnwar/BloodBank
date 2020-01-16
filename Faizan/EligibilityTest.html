@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <title>Eligibility Quiz</title>
+    <style scoped>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #E31D1A;
+        }
+
+        .eligibility-form .question-div {
+            width: 50%;
+            /* box-shadow: 5px 10px #888888; */
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+        }
+
+        .eligibility-form .question-div {
+            margin: 0 auto;
+            justify-content: center;
+        }
+
+        .eligibility-form .question-div .form-heading {
+            text-align: center;
+        }
+
+        .eligibility-form .question-div .question {
+            text-align: center;
+        }
+
+        .eligibility-form .question-div .button-container {
+            justify-content: center;
+            display: flex;
+        }
+
+        .eligibility-form .question-div {
+            text-align: center;
+        }
+
+        .btn {
+            border-radius: 3px;
+            height: 40px;
+        }
+
+        .button-container>button {
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            width: 150px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        body{
+            background-color:whitesmoke;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="BloodTips.html">Blood Tips</a></li>
+            <li><a href="AboutUs.html">About</a></li>
+            <li><a class="active" href="EligibilityTest.html">Eligibility</a></li>
+            <li><a href="ContactUs.html">Contact</a></li>
+            <li style="float:right"><a href="Login.html">Sign In</a></li>
+        </ul>
+    </header>
+
+    <div class="eligibility-form" >
+
+        <form action="/action_page.php">
+
+
+            <div class="question-div" id="quiz" style="background-color:#E2A941;padding: 20px;margin-top: 30px;">
+
+                <div id="main-div">
+                    <h2 class="form-heading">Take the eligibility quiz</h2>
+                    <h3 id="question" class="question"></h3>
+                    <div class="button-container">
+                        <button type="submit" class="btn" id="choiceA">Yes</button>
+                        <button type="submit" class="btn" id="choiceB">No</button>
+                    </div>
+                </div>
+
+                <div class="success-case" id="success" style="display:none">
+                    <h3 class="result-heading">Congratulation, you are eligible to donate.</h3>
+                    <div class="button-container">
+                        <button type="submit" class="btn" id="success-startover">Start Over</button>
+                        <button type="submit" class="btn" id="success-register">Register</button>
+                    </div>
+                </div>
+
+                <div class="failure-case" id="failure" style="display:none">
+                    <h3 class="result-heading"> Sorry, you are ineligible to donate.</h3>
+                    <div class="button-container">
+                        <button type="submit" class="btn" id="fail-startover">Start Over</button>
+                        <button type="submit" class="btn" id="fail-register">Register</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </form>
+    </div>
+
+    <script type="text/javascript" src="addquestions.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html>

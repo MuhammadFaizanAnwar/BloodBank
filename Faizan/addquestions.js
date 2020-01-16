@@ -1,0 +1,22 @@
+var questionForm = document.getElementById("add-question");
+questionForm.onsubmit = processForm;
+
+function processForm() {
+  var newQuestion = {
+    question: questionForm.question.value,
+    choiceA: questionForm.choiceA.value,
+    choiceB: questionForm.choiceB.value,
+    correct: questionForm.correct.value
+  };
+  // if local storage contains questions, pull and update stored data. Store new object otherwise
+  if (localStorage.getItem("questions")) {
+    var questions = JSON.parse(localStorage.getItem("questions"));
+    questions.push(newQuestion);
+    localStorage.setItem("questions", JSON.stringify(questions));
+  } else {
+    var questions = [newQuestion];
+    localStorage.setItem("questions", JSON.stringify(newQuestion));
+  }
+  questionForm.reset();
+  return false;
+}
